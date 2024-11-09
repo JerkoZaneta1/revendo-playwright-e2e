@@ -1,0 +1,25 @@
+        NTH SELECTOR
+        await page.locator(':nth-match(:text("TEXT HERE"), 2)').click();    
+
+
+    UNSELECTABLE OBJECT HACK
+        await page.locator('text=I have').click({
+            position: {
+                x: 1,
+                y: 1
+            }
+        })
+
+GET ORDER ID FROM API URL
+ const promise = page.waitForResponse(/orderId/); // This is a regex to match the url
+  a3wait page.locator("text=Jetzt Zahlen").click();
+  var response = await promise; // here we wait for the promise to be fullfiled.
+  let resp = await response.url().slice(-32);
+
+  GET ALL RESPONSES FROM PAGE AFTER CLICK 
+  page.on('response', response => console.log('<<', response.status(), response.url()));
+
+  SERIAL TESTS RUN
+  test.describe.configure({
+  mode: 'parallel'
+ });

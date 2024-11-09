@@ -1,0 +1,152 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Jere\\Desktop\\play\\Playwright_native\\playwright.config.js",
+    "rootDir": "C:/Users/Jere/Desktop/play/Playwright_native",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1,
+      "totalTime": 40307.481999993324
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Jere/Desktop/play/Playwright_native/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Chrome",
+        "name": "Chrome",
+        "testDir": "C:/Users/Jere/Desktop/play/Playwright_native",
+        "testIgnore": [],
+        "testMatch": [
+          "/.desktop.test.js/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Jere/Desktop/play/Playwright_native/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "Android",
+        "name": "Android",
+        "testDir": "C:/Users/Jere/Desktop/play/Playwright_native",
+        "testIgnore": [],
+        "testMatch": [
+          "/.mobile.test.js/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.36.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\desktop.test.js",
+      "file": "tests/desktop.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login as an existing user, Test No: 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 131000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chrome",
+              "projectName": "Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 20001,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Logged in succesfully with the username: jt+test2@revendo.ch and password: qweqweqwe\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-07-31T11:06:26.940Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7750fe4b51e842544937-8c3c21245075a3f90f6c",
+          "file": "tests/desktop.test.js",
+          "line": 67,
+          "column": 8
+        },
+        {
+          "title": "Create a new user, Test No: 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 131000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chrome",
+              "projectName": "Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 18955,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Registered succesfully with the username: jt+16908015869149999828653555582@revendo.ch and password: qweqweqwe \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-07-31T11:06:47.487Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7750fe4b51e842544937-8b1f8b063fffbc1f67f9",
+          "file": "tests/desktop.test.js",
+          "line": 71,
+          "column": 8
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,242 @@
+[
+    {
+        "_id": "63a14e5c-3fc2-44a9-9acb-86ef950c9535",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/product",
+        "url": "https://sw.revendo.dev/store-api/product",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2024-02-19T13:18:39.500Z",
+        "modified": "2024-02-19T14:29:51.497Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"filter\": [\r\n      {\r\n            \"type\": \"equals\",\r\n            \"field\": \"id\",\r\n            \"value\": \"085b90da25d9eb127054ce6f94d9dfaf\"\r\n        }\r\n    ],\r\n    \"includes\": {\r\n        \"product\": [\"id\", \"available\", \"availableStock\", \"stock\"]\r\n    },\r\n    \"limit\": 10\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "03814ef4-48de-4ccf-8dff-f0d06e345c4f",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/product/085b90da25d9eb127054ce6f94d9dfaf",
+        "url": "https://sw.revendo.dev/store-api/product/085b90da25d9eb127054ce6f94d9dfaf",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2024-02-19T14:10:26.069Z",
+        "modified": "2024-02-19T14:10:55.080Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"includes\": {\r\n        \"product\": [\"id\", \"available\", \"availableStock\", \"stock\"]\r\n    },\r\n    \"limit\": 10\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "cda3c68d-d2a6-4f0a-aa29-9f787d2b5587",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/product/f72a0996102322bc2cc304e29457557f",
+        "url": "https://sw.revendo.dev/store-api/product/f72a0996102322bc2cc304e29457557f",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2024-02-19T14:11:05.806Z",
+        "modified": "2024-02-19T14:30:22.431Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n  \"includes\": {\r\n    \"product\": [\r\n      \"id\",\r\n      \"available\",\r\n      \"availableStock\",\r\n      \"stock\"\r\n    ]\r\n  },\r\n  \"limit\": 10\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "e29550fa-06fe-437d-b107-1da1579b3857",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/product/",
+        "url": "https://sw.revendo.dev/store-api/product/",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2024-02-19T14:11:10.024Z",
+        "modified": "2024-02-19T14:11:10.024Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"includes\": {\r\n        \"product\": [\"id\", \"available\", \"availableStock\", \"stock\"]\r\n    },\r\n    \"limit\": 10\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "34486b14-7d4d-4cfd-a245-9e1a4bbf685d",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/rvag-stock-location",
+        "url": "https://sw.revendo.dev/store-api/rvag-stock-location",
+        "method": "GET",
+        "sortNum": 0,
+        "created": "2024-02-19T14:11:42.206Z",
+        "modified": "2024-02-19T14:14:46.234Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"associations\": {\r\n        \"products\": {\r\n            \"filter\": [\r\n                { \r\n                    \"type\": \"range\", \r\n                    \"field\": \"availableStock\", \r\n                    \"parameters\": {\r\n                        \"gt\": 0\r\n                    }\r\n                }    \r\n            ]\r\n        }\r\n    },\r\n    \"filter\": [\r\n\t\t{\r\n            \"type\": \"equals\",\r\n            \"field\": \"id\",\r\n            \"value\": \"81c04f58f8f340cca6a4309889e22f8f\"\r\n        }\r\n    ],\r\n    \"includes\": {\r\n        \"product\": [\"id\", \"available\", \"availableStock\", \"stock\"]\r\n    }\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "ef8373d0-6e6e-4a70-a4c8-467a6502c81e",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/product/f72a0996102322bc2cc304e29457557f",
+        "url": "https://sw.revendo.dev/store-api/product/f72a0996102322bc2cc304e29457557f",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2024-02-19T14:30:29.685Z",
+        "modified": "2024-02-19T14:30:29.685Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n  \"includes\": {\r\n    \"product\": [\r\n      \"id\",\r\n      \"available\",\r\n      \"availableStock\",\r\n      \"stock\"\r\n    ]\r\n  },\r\n  \"limit\": 10\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "9e8b3176-c1b6-4b25-a36f-beb1209136b9",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/product/085b90da25d9eb127054ce6f94d9dfaf",
+        "url": "https://sw.revendo.dev/store-api/product/085b90da25d9eb127054ce6f94d9dfaf",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2024-02-19T14:30:50.727Z",
+        "modified": "2024-02-19T14:31:42.472Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"filter\": [\r\n      {\r\n            \"type\": \"equals\",\r\n            \"field\": \"id\",\r\n            \"value\": \"085b90da25d9eb127054ce6f94d9dfaf\"\r\n        }\r\n    ],\r\n    \"includes\": {\r\n        \"product\": [\"id\", \"available\", \"availableStock\", \"stock\"]\r\n    },\r\n    \"limit\": 10\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "faafbcef-39c9-485f-90e4-f18545cbaab0",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/rvag-stock-location",
+        "url": "https://sw.revendo.dev/store-api/rvag-stock-location",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2024-02-19T14:38:08.052Z",
+        "modified": "2024-02-19T14:39:06.914Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"associations\": {\r\n        \"products\": {\r\n            \"limit\": 10\r\n        }\r\n    },\r\n    \"filter\": [\r\n\t     {\r\n            \"type\": \"equals\",\r\n            \"field\": \"id\",\r\n            \"value\": \"085b90da25d9eb127054ce6f94d9dfaf\"\r\n        }\r\n    ],\r\n    \"includes\": {\r\n        \"product\": [\"id\", \"available\", \"availableStock\", \"stock\"]\r\n    }\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "0eaabb76-8a7f-48fa-ac0c-9b6c129e7e63",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/store-api/product",
+        "url": "https://sw.revendo.dev/store-api/product",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2024-02-19T14:39:26.416Z",
+        "modified": "2024-02-19T14:42:17.070Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"associations\": {\r\n        \"rvagStockLocations\": {\r\n            \"associations\": {\r\n                \"rvagStocks\": {\r\n                    \"filter\": [\r\n                        {\r\n                            \"type\": \"equals\",\r\n                            \"field\": \"productId\",\r\n                            \"value\": \"f72a0996102322bc2cc304e29457557f\"\r\n                        }\r\n                    ]\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+            "form": []
+        },
+        "tests": []
+    },
+    {
+        "_id": "4a3c01ec-74bc-416a-a514-ffbd1eb51270",
+        "colId": "history",
+        "containerId": "",
+        "name": "https://sw.revendo.dev/en-ch/store-api/product",
+        "url": "https://sw.revendo.dev/en-ch/store-api/product",
+        "method": "POST",
+        "sortNum": 0,
+        "created": "2024-02-22T13:28:49.081Z",
+        "modified": "2024-02-22T13:32:28.919Z",
+        "headers": [
+            {
+                "name": "sw-access-key",
+                "value": "SWSCRLBQEB2ZTOO7KZVMWLUC-G"
+            }
+        ],
+        "params": [],
+        "body": {
+            "type": "json",
+            "raw": "{\r\n    \"filter\": [\r\n      {\r\n            \"type\": \"equals\",\r\n            \"field\": \"id\",\r\n            \"value\": \"085b90da25d9eb127054ce6f94d9dfaf\"\r\n        }\r\n    ],\r\n    \"includes\": {\r\n        \"product\": [\"id\", \"available\", \"availableStock\", \"stock\"]\r\n    },\r\n    \"limit\": 10\r\n}",
+            "form": []
+        },
+        "tests": []
+    }
+]
